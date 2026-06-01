@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+
+name: My First Workflow
+
+on: push
+
+jobs:
+    my-first-job:
+        runs-on:  ubuntu-latest
+        steps:
+            - name: welcome message
+              run: echo "My first git hub action job execution"
+
+            - name: List files
+              run: ls -ltr
+
+            - name: Read file
+              run: cat README.md
