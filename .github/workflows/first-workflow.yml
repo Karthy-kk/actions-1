@@ -10,12 +10,16 @@ jobs:
         steps:
             - name: Checkout Repo
               uses: actions/checkout@v6
-              
+
             - name: welcome message
               run: echo "My first git hub action job execution"
+                   ls -ltra 
+                   cat README.md
+            - name: Generate ASCII artwork
+              run: cowsay -f dragon "I am a dragon" >> dragon.txt
 
-            - name: List files
-              run: ls -ltr
+            # - name: List files
+            #   run: ls -ltr
 
-            - name: Read file
-              run: cat README.md
+            # - name: Read file
+            #   run: cat README.md
