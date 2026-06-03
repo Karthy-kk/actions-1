@@ -17,5 +17,5 @@ jobs:
         run:  ls -ltra
 
       - name: Exececuting the Cowsay Program
-        run: ./ascii-script.sh
+        run: ./ascii-scriptnew.sh
 
