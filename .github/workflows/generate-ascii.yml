@@ -17,5 +17,7 @@ jobs:
         run:  ls -ltra
 
       - name: Exececuting the Cowsay Program
-        run: ./.github/workflows/ascii-script.sh
+        run: |
+          chmod +x ascii-script.sh
+          ./.github/workflows/ascii-script.sh
 
