@@ -18,6 +18,6 @@ jobs:
 
       - name: Exececuting the Cowsay Program
         run: |
-          chmod +x ascii-script.sh
+          chmod +x ./.github/workflows/ascii-script.sh
           ./.github/workflows/ascii-script.sh
 
